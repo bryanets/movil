@@ -20,7 +20,10 @@ public class User {
 	@Id
 	private String id;
 	private String name;
+	private String dni;
+	private String numCard;
 	private String user;
 	private String password;
-	private Map<String, Object> movimientos;
+	private Double saldo;
+	private Moves moves;
 }

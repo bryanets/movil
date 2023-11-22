@@ -13,4 +13,6 @@ public class Servicio {
 	@Id
 	private String id;
 	private String name;
+	private String service;
+	private Customer custumer;
 }
