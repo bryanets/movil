@@ -39,9 +39,7 @@ public class UserController {
 
     @PostMapping("/signup")
     @ResponseBody
-    public ResponseEntity<Map<String, Object>> insertaUser(
-            @RequestBody User obj
-    ) {
+    public ResponseEntity<Map<String, Object>> insertaUser(@RequestBody User obj) {
         Map<String, Object> salida = new HashMap<>();
         try {
             User objSalida = service.registrar(obj);
@@ -59,9 +57,7 @@ public class UserController {
 
     @PutMapping("/updateuser")
     @ResponseBody
-    public ResponseEntity<Map<String, Object>> actualizaUser(
-            @RequestBody User obj
-    ) {
+    public ResponseEntity<Map<String, Object>> actualizaUser(@RequestBody User obj) {
         Map<String, Object> salida = new HashMap<>();
         try {
             User objSalida = service.registrar(obj);
