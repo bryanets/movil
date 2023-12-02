@@ -33,7 +33,7 @@ public class UserController {
     @PostMapping("/login")
     @ResponseBody
     public ResponseEntity<User> login(@RequestBody User obj) {
-        obj = service.login(obj.getUser(), obj.getPassword(), obj.getNumCard());
+        obj = service.login(obj.getDni(), obj.getPassword(), obj.getNumCard());
         return ResponseEntity.ok(obj);
     }
 

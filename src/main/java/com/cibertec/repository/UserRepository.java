@@ -7,6 +7,6 @@ import com.cibertec.entity.User;
 
 public interface UserRepository extends MongoRepository<User, String> {
 
-    @Query("{'user': ?0, 'password': ?1,'numCard': ?2}")
-    public User login(String user, String pass, String numCard);
+    @Query("{'dni': ?0, 'password': ?1,'numCard': ?2}")
+    public User login(String user, String pass, String dni);
 }

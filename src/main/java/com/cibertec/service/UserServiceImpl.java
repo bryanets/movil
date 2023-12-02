@@ -20,8 +20,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User login(String usu, String pass, String numCard) {
-        return repository.login(usu, pass, numCard);
+    public User login(String dni, String pass, String numCard) {
+        return repository.login(dni, pass, numCard);
     }
 
     @Override

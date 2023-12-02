@@ -8,7 +8,7 @@ public interface UserService {
 
     public abstract User registrar(User user);
 
-    public abstract User login(String usu, String pass, String numCard);
+    public abstract User login(String dni, String pass, String numCard);
 
     public abstract void delete(String id);
 
