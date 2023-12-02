@@ -25,5 +25,5 @@ public class User {
 	private String user;
 	private String password;
 	private Double saldo;
-	private List<Moves> moves;
+	private Map<Object,String> moves;
 }
