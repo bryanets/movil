@@ -1,7 +1,7 @@
 package com.cibertec.entity;
 
 import java.util.Map;
-
+import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -25,5 +25,5 @@ public class User {
 	private String user;
 	private String password;
 	private Double saldo;
-	private Moves moves;
+	private List<Moves> moves;
 }
