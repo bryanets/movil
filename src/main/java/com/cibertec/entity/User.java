@@ -17,13 +17,13 @@ import lombok.Setter;
 @Document(collection = "user")
 public class User {
 
-	@Id
-	private String id;
-	private String name;
-	private String dni;
-	private String numCard;
-	private String user;
-	private String password;
-	private Double saldo;
-	private Map<Object,String> moves;
+    @Id
+    private String id;
+    private String name;
+    private String dni;
+    private String numCard;
+    private String user;
+    private String password;
+    private Double saldo;
+    private List<Moves> moves;
 }

@@ -16,7 +16,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User registrar(User user) {
-        return repository.save(user);
+
+        if (repository.findByNumCard(user.getNumCard()) == null || repository.findByDni(user.getDni()) == null) {
+            user = null;
+        } else {
+            user = repository.save(user);
+        }
+
+        return user;
     }
 
     @Override
