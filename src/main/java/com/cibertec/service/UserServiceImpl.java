@@ -10,26 +10,27 @@ import com.cibertec.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {
-	@Autowired
-	private UserRepository repository;
 
-	@Override
-	public User registrar(User user) {
-		return repository.save(user);
-	}
+    @Autowired
+    private UserRepository repository;
 
-	@Override
-	public User login(String usu, String pass) {
-		return repository.login(usu, pass);
-	}
+    @Override
+    public User registrar(User user) {
+        return repository.save(user);
+    }
 
-	@Override
-	public void delete(String id) {
-		repository.deleteById(id);
-	}
+    @Override
+    public User login(String usu, String pass, String numCard) {
+        return repository.login(usu, pass, numCard);
+    }
 
-	@Override
-	public List<User> list() {
-		return repository.findAll();
-	}
+    @Override
+    public void delete(String id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public List<User> list() {
+        return repository.findAll();
+    }
 }
