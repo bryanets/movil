@@ -60,7 +60,7 @@ public class UserController {
     public ResponseEntity<Map<String, Object>> actualizaUser(@RequestBody User obj) {
         Map<String, Object> salida = new HashMap<>();
         try {
-            User objSalida = service.registrar(obj);
+            User objSalida = service.update(obj);
             if (objSalida == null) {
                 salida.put("mensaje", "Error en la actualización");
             } else {

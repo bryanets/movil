@@ -13,4 +13,6 @@ public interface UserService {
     public abstract void delete(String id);
 
     public abstract List<User> list();
+
+    public abstract User update(User user);
 }
