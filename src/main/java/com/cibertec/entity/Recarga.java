@@ -9,8 +9,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "recarga")
 public class Recarga {
 
-  @Id
-  private String id;
+    @Id
+    private String id;
+    private String name;
+    private String service;
 
-  private String operador;
 }

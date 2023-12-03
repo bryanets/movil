@@ -10,9 +10,10 @@ import lombok.Setter;
 @Setter
 @Document(collection = "servicios")
 public class Servicio {
-	@Id
-	private String id;
-	private String name;
-	private String service;
-	private Customer custumer;
+
+    @Id
+    private String id;
+    private String name;
+    private String service;
+    private Customer customer;
 }
